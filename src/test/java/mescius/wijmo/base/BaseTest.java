@@ -26,11 +26,11 @@ public class BaseTest {
 
     @AfterClass
     public void closeBrowser() {
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         browser.quit();
     }
 

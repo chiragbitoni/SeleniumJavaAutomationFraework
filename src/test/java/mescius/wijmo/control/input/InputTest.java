@@ -25,12 +25,16 @@ public class InputTest extends BaseTest {
         browser.findElement(By.xpath("//*[@id=\"theAutoComplete_dropdown\"]/div[3]")).click();
         actual += String.valueOf(browser.findElement(By.xpath("//div[@wj-part='dropdown']")).isDisplayed());
         Assert.assertEquals(actual, expected);
+        closeBrowser();
+        setUp();
     }
 
     @Test
-    public void TC_GL5150(){
+    public void TC_GL5150() throws InterruptedException {
         fileName = "TC_GL5150.html";
         loadUrl();
         expected = "";
+//        browser.
+        closeBrowser();
     }
 }
