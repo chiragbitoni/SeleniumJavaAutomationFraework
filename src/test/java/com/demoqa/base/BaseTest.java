@@ -28,7 +28,7 @@ public class BaseTest {
     public void loadUrl(){
         driver.get(url);
         basePage = new BasePage();
-        basePage.serDriver(driver);
+        basePage.setDriver(driver);
         setUtilityDriver();
         homePage = new HomePage();
         elementsPage = new ElementsPage();

@@ -4,14 +4,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class BasePage {
     public static WebDriver driver;
 
-    public void serDriver(WebDriver driver){
+    public void setDriver(WebDriver driver){
         BasePage.driver = driver;
     }
     public WebElement find(By locator){
         return driver.findElement(locator);
+    }
+    public List<WebElement> findElements(By locator) {
+        return driver.findElements(locator);
     }
     public void setText(By locator, String text){
         find(locator).clear();

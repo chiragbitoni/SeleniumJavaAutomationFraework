@@ -2,8 +2,6 @@ package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;

@@ -15,7 +15,10 @@ public class ElementsPage extends BasePage {
     public By permanentAddressField = By.id("permanentAddress");
     public By submitButton = By.id("submit");
     public By outputDiv = By.id("output");
-
+    public By homeCheckbox = By.xpath("//label[@for='tree-node-home']//span[@class='rct-checkbox']");
+    public By homeExpandButton = By.xpath("//div[@id=\"tree-node\"]//span//button");
+    public By documentsCheckbox = By.xpath("//label[@for='tree-node-documents']//span[@class='rct-checkbox']");
+    public By checkboxPageOutput = By.xpath("//div[@id='result']//span");
     public void clickElementsHeaderCard(){
         scrollToElementJS(elementsHeaderCard);
         click(elementsHeaderCard);
