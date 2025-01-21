@@ -14,8 +14,7 @@ public class TextBoxTest extends BaseTest {
     private String expected = "Name:Chirag Bitoni\nEmail:chiragbitoni4994@gmail.com\nCurrent Address :Plot-11, Greater Noida West 201307\nPermananet Address :A-52 Krishi Vihar, New Delhi 110048";
     @Test
     public void TC001(){
-        homePage.goToForms();
-        elementsPage.clickElementsHeaderCard();
+        homePage.goToElements();
         elementsPage.clickTextBoxCard();
         basePage.setText(elementsPage.fullNameTextField,"Chirag Bitoni");
         basePage.setText(elementsPage.emailTextField,"chiragbitoni4994@gmail.com");
