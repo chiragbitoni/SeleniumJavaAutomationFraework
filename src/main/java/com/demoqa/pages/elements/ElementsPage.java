@@ -1,7 +1,8 @@
 package com.demoqa.pages.elements;
 
-import com.demoqa.pages.BasePage;
 import org.openqa.selenium.By;
+
+import com.demoqa.pages.BasePage;
 
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
@@ -10,6 +11,7 @@ public class ElementsPage extends BasePage {
     private By textBoxCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[1]");
     private By checkboxCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[2]");
     private By radioButtonCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[3]");
+    private By webTablesCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[4]");
     public By fullNameTextField = By.id("userName");
     public By emailTextField = By.id("userEmail");
     public By currentAddressField = By.id("currentAddress");
@@ -25,6 +27,18 @@ public class ElementsPage extends BasePage {
     public By yesRadioButton = By.xpath("//input[@id='yesRadio']");
     public By radioButtonOutput = By.xpath("//p/span");
     public By impressiveRadioButton = By.xpath("//input[@id='impressiveRadio']");
+    // WebTables
+    public By addRecordContainer = By.xpath("//div[@class='modal-content']");
+    public By addButton = By.id("addNewRecordButton");
+    public By firstName = By.id("firstName");
+    public By lastName = By.id("lastName");
+    public By userEmail = By.id("userEmail");
+    public By age = By.id("age");
+    public By salary = By.id("salary");
+    public By department = By.id("department");
+    public By addedItems = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group'][4]");
+    public By fourthRowEditButton = By.id("edit-record-4");
+    public By fourthRowDeleteButton = By.id("delete-record-4");
     public void clickElementsHeaderCard(){
         scrollToElementJS(elementsHeaderCard);
         click(elementsHeaderCard);
@@ -40,5 +54,9 @@ public class ElementsPage extends BasePage {
     public void clickRadioButtonCard(){
         scrollToElementJS(radioButtonCard);
         click(radioButtonCard);
+    }
+    public void clickWebTablesCard(){
+        scrollToElementJS(webTablesCard);
+        click(webTablesCard);
     }
 }
