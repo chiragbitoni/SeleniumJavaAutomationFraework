@@ -28,7 +28,6 @@ public class ElementsPage extends BasePage {
     public By radioButtonOutput = By.xpath("//p/span");
     public By impressiveRadioButton = By.xpath("//input[@id='impressiveRadio']");
     // WebTables
-    public By addRecordContainer = By.xpath("//div[@class='modal-content']");
     public By addButton = By.id("addNewRecordButton");
     public By firstName = By.id("firstName");
     public By lastName = By.id("lastName");
@@ -36,9 +35,12 @@ public class ElementsPage extends BasePage {
     public By age = By.id("age");
     public By salary = By.id("salary");
     public By department = By.id("department");
-    public By addedItems = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group'][4]");
+    public By addedItem = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group'][4]");
     public By fourthRowEditButton = By.id("edit-record-4");
     public By fourthRowDeleteButton = By.id("delete-record-4");
+    public By searchBox = By.id("searchBox");
+    public By tableItems = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group']/div");
+    public By columnHeaders = By.xpath("//div[@class='rt-thead -header']/div/div");
     public void clickElementsHeaderCard(){
         scrollToElementJS(elementsHeaderCard);
         click(elementsHeaderCard);
