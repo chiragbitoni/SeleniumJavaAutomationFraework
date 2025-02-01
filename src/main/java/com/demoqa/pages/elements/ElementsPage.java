@@ -8,10 +8,12 @@ import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class ElementsPage extends BasePage {
     private By elementsHeaderCard = By.xpath("//div[@class='accordion']//div[text()='Elements']");
+  //Elements cards
     private By textBoxCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[1]");
     private By checkboxCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[2]");
     private By radioButtonCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[3]");
     private By webTablesCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[4]");
+    private By buttonsCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[5]");
     public By fullNameTextField = By.id("userName");
     public By emailTextField = By.id("userEmail");
     public By currentAddressField = By.id("currentAddress");
@@ -41,6 +43,13 @@ public class ElementsPage extends BasePage {
     public By searchBox = By.id("searchBox");
     public By tableItems = By.xpath("//div[@class='rt-tbody']//div[@class='rt-tr-group']/div");
     public By columnHeaders = By.xpath("//div[@class='rt-thead -header']/div/div");
+    //Buttons Page Elements
+    public By doubleClickMeButton = By.id("doubleClickBtn");
+    public By rightClickMeButton = By.id("rightClickBtn");
+    public By dynamicClickButton = By.xpath("//button[text()='Click Me']");
+    public By doubleClickMessage = By.id("doubleClickMessage");
+    public By rightClickMessage = By.id("rightClickMessage");
+    public By dynamicClickMessage = By.id("dynamicClickMessage");
     public void clickElementsHeaderCard(){
         scrollToElementJS(elementsHeaderCard);
         click(elementsHeaderCard);
@@ -60,5 +69,9 @@ public class ElementsPage extends BasePage {
     public void clickWebTablesCard(){
         scrollToElementJS(webTablesCard);
         click(webTablesCard);
+    }
+    public void clickButtonsCard(){
+        scrollToElementJS(buttonsCard);
+        click(buttonsCard);
     }
 }

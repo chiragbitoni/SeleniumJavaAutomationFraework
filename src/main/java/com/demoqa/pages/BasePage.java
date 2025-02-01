@@ -12,6 +12,9 @@ public class BasePage {
     public void setDriver(WebDriver driver){
         BasePage.driver = driver;
     }
+    public WebDriver getDriver(){
+        return driver;
+    }
     public WebElement find(By locator){
         return driver.findElement(locator);
     }

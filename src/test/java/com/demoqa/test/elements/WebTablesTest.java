@@ -64,7 +64,6 @@ public class WebTablesTest extends BaseTest {
         elementsPage.clickWebTablesCard();
         basePage.setText(elementsPage.searchBox,"Insurance");
         actual = getItems();
-        System.out.println(basePage.find(elementsPage.searchBox).getDomAttribute("text"));
         for(int i=0;i<="Insurance".length();i++){
         basePage.find(elementsPage.searchBox).sendKeys(Keys.BACK_SPACE);
         }
