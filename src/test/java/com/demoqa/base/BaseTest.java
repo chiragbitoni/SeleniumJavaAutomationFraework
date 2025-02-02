@@ -3,6 +3,7 @@ package com.demoqa.base;
 import com.demoqa.pages.BasePage;
 import com.demoqa.pages.HomePage;
 import com.demoqa.pages.elements.ElementsPage;
+import com.demoqa.pages.elements.LinksPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -17,6 +18,7 @@ public class BaseTest {
     protected BasePage basePage;
     protected HomePage homePage;
     protected ElementsPage elementsPage;
+    protected LinksPage linksPage;
     private String url = "https://demoqa.com/";
 
     @BeforeClass
@@ -32,6 +34,7 @@ public class BaseTest {
         setUtilityDriver();
         homePage = new HomePage();
         elementsPage = new ElementsPage();
+        linksPage = new LinksPage();
     }
     @AfterClass
     public void tearDown(){

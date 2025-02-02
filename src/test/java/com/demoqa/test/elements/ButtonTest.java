@@ -22,7 +22,7 @@ public class ButtonTest extends BaseTest {
         elementsPage.clickButtonsCard();
         Actions action = new Actions(basePage.getDriver());
         action.doubleClick(basePage.find(elementsPage.doubleClickMeButton)).perform();
-        scrollToElementJS(elementsPage.rightClickMeButton);
+        delay(1000);
         action.contextClick(basePage.find(elementsPage.rightClickMeButton)).perform();
         basePage.click(elementsPage.dynamicClickButton);
         actual = String.valueOf(basePage.find(elementsPage.doubleClickMessage).isDisplayed());

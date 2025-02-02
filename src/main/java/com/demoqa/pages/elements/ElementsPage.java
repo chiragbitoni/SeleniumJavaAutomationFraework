@@ -14,6 +14,7 @@ public class ElementsPage extends BasePage {
     private By radioButtonCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[3]");
     private By webTablesCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[4]");
     private By buttonsCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[5]");
+    private By linksCard = By.xpath("//div[@class='element-group'][1]/div/ul/li[6]");
     public By fullNameTextField = By.id("userName");
     public By emailTextField = By.id("userEmail");
     public By currentAddressField = By.id("currentAddress");
@@ -73,5 +74,9 @@ public class ElementsPage extends BasePage {
     public void clickButtonsCard(){
         scrollToElementJS(buttonsCard);
         click(buttonsCard);
+    }
+    public void clickLinksCard(){
+      scrollToElementJS(linksCard);
+      click(linksCard);
     }
 }
