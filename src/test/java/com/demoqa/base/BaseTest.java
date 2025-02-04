@@ -2,6 +2,7 @@ package com.demoqa.base;
 
 import com.demoqa.pages.BasePage;
 import com.demoqa.pages.HomePage;
+import com.demoqa.pages.elements.BrokenLinkImagePage;
 import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.elements.LinksPage;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class BaseTest {
     protected HomePage homePage;
     protected ElementsPage elementsPage;
     protected LinksPage linksPage;
+    protected BrokenLinkImagePage brokenLinkImagePage;
     private String url = "https://demoqa.com/";
 
     @BeforeClass
@@ -35,6 +37,7 @@ public class BaseTest {
         homePage = new HomePage();
         elementsPage = new ElementsPage();
         linksPage = new LinksPage();
+        brokenLinkImagePage = new BrokenLinkImagePage();
     }
     @AfterClass
     public void tearDown(){
