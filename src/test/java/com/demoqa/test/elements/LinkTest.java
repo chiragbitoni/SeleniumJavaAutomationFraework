@@ -1,6 +1,7 @@
 package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,7 +19,7 @@ public class LinkTest extends BaseTest {
     private String actual = "";
     private String expected = "https://demoqa.com/https://demoqa.com/truetruetruetruetruetruetrue";
 
-
+    @Step("TC009")
     @Test
     public void TC009() {
         homePage.goToElements();

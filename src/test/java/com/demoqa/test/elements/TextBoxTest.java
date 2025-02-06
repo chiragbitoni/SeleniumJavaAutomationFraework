@@ -1,6 +1,7 @@
 package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ public class TextBoxTest extends BaseTest {
     Test Summary: Verify functionality of the text box
     */
     private String expected = "Name:Chirag Bitoni\nEmail:chiragbitoni4994@gmail.com\nCurrent Address :Plot-11, Greater Noida West 201307\nPermananet Address :A-52 Krishi Vihar, New Delhi 110048";
+    @Step("TC001")
     @Test
     public void TC001(){
         homePage.goToElements();

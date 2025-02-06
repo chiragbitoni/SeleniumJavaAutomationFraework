@@ -1,6 +1,7 @@
 package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,6 +15,7 @@ public class RadioButtonTest extends BaseTest {
      */
     private String actual = "";
     private String expected = "YesImpressive";
+    @Step("TC004")
     @Test
     public void TC004(){
         homePage.goToElements();

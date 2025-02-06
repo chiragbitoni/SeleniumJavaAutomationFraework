@@ -1,5 +1,6 @@
 package com.demoqa.test.elements;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class WebTablesTest extends BaseTest {
     private String actual = "";
     private String rowData = "";
     private String expected = "ChiragBitoni23chiragbitoni4994@gmail.com70000000ITChiragBitoni23chiragbitoni4994@gmail.com70000000Developer Tools";
+    @Step("TC005")
     @Test
     public void TC005(){
         homePage.goToElements();
@@ -55,7 +57,7 @@ public class WebTablesTest extends BaseTest {
        Test Case ID: TC006
        Test Summary: Verify that the search and reset functionalities work correctly.
      */
-
+    @Step("TC006")
     @Test
     public void TC006(){
         actual = "";
@@ -77,7 +79,7 @@ public class WebTablesTest extends BaseTest {
        Test Case ID: TC006
        Test Summary: Verify that the search and reset functionalities work correctly.
      */
-
+    @Step("TC007")
     @Test
     public void TC007(){
         actual = "";

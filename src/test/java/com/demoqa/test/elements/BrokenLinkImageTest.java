@@ -1,6 +1,7 @@
 package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,6 +24,7 @@ public class BrokenLinkImageTest extends BaseTest {
     private String imageSrc = "";
     private String actual = "";
     private String expected = "falsetrue";
+    @Step("TC010")
     @Test
     public void TC010(){
         homePage.goToElements();
@@ -38,6 +40,7 @@ public class BrokenLinkImageTest extends BaseTest {
         Test case ID: TC011
         Test summary: Verify that the valid link redirects to the correct page and the broken link results in an error page.
      */
+    @Step("TC011")
     @Test
     public void TC011(){
         actual = "";

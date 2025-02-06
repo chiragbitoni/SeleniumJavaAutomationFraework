@@ -1,6 +1,7 @@
 package com.demoqa.test.elements;
 
 import com.demoqa.base.BaseTest;
+import io.qameta.allure.Step;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -16,6 +17,7 @@ public class ButtonTest extends BaseTest {
     */
     private String actual = "";
     private String expected = "truetruetrue";
+    @Step("TC008")
     @Test
     public void TC008(){
         homePage.goToElements();

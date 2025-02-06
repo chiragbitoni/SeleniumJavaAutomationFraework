@@ -10,6 +10,7 @@
  - Selenium WebDriver.
  - TestNG.
  - Maven.
+ - Allure Report
  - Local Browsers.
 ### Features to be tested:
 - **Forms:** Verify functionality of test fields, dropdowns, checkboxes and buttons.
@@ -54,3 +55,8 @@
   2. Install maven depencencies.
   3. Execute tests.
   4. Export test results in .html file.
+### Report Generation
+- **Run the following commands**
+  1. mvn clean test
+  2. allure serve allure-results
+
