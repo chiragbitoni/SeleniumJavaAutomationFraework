@@ -5,6 +5,7 @@ import com.demoqa.pages.HomePage;
 import com.demoqa.pages.elements.BrokenLinkImagePage;
 import com.demoqa.pages.elements.ElementsPage;
 import com.demoqa.pages.elements.LinksPage;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -39,9 +40,16 @@ public class BaseTest {
         linksPage = new LinksPage();
         brokenLinkImagePage = new BrokenLinkImagePage();
     }
+    @Step("TearDown")
     @AfterClass
     public void tearDown(){
-        delay(3000);
-        driver.quit();
+        try {
+            delay(3000);
+            if (driver != null) {
+                driver.quit();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
