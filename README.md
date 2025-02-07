@@ -57,4 +57,4 @@
 ### Report Generation
 - **Run the following commands**
   1. mvn clean test
-  2. allure serve allure-repo
+  2. allure serve allure-results
