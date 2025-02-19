@@ -1,13 +1,14 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
+import java.io.File;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
-
+import com.demoqa.base.BaseTest;
 import static com.demoqa.pages.BasePage.delay;
+
+import io.qameta.allure.Step;
 import static utilities.Utilities.getSystemDownloadPath;
 
 public class UploadAndDownloadTest extends BaseTest {
@@ -21,7 +22,7 @@ public class UploadAndDownloadTest extends BaseTest {
     File downloadedFile = new File(getSystemDownloadPath() + "\\sampleFile.jpeg");
 
     @Step("TC012")
-    @Test
+    @Test(description = "TC012: Validate that a user can successfully download a file from the DemoQA download page.")
     public void TC012() {
         homePage.goToElements();
         elementsPage.clickUploadAndDownloadCard();
@@ -42,7 +43,7 @@ public class UploadAndDownloadTest extends BaseTest {
         Test Case Summary: Validate that a user can successfully upload a file on the DemoQA upload page.
      */
     @Step("TC013")
-    @Test
+    @Test(description = "TC013: Validate that a user can successfully upload a file on the DemoQA upload page.")
     public void TC013() {
         actual = "";
         expected = "C:\\fakepath\\sampleFile.jpeg";

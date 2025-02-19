@@ -1,17 +1,16 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
-import org.openqa.selenium.Keys;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-import static utilities.JavaScriptUtility.scrollToElementJS;
+import org.openqa.selenium.Keys;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.demoqa.base.BaseTest;
+
+import io.qameta.allure.Step;
 
 public class BrokenLinkImageTest extends BaseTest {
     //region TC010
@@ -25,7 +24,7 @@ public class BrokenLinkImageTest extends BaseTest {
     private String actual = "";
     private String expected = "falsetrue";
     @Step("TC010")
-    @Test
+    @Test(description = "TC010: Verify that both broken and non-broken images are correctly identified on the page.")
     public void TC010(){
         homePage.goToElements();
         elementsPage.clickBrokenLinkImageCard();
@@ -41,7 +40,7 @@ public class BrokenLinkImageTest extends BaseTest {
         Test summary: Verify that the valid link redirects to the correct page and the broken link results in an error page.
      */
     @Step("TC011")
-    @Test
+    @Test(description = "TC011: Verify that the valid link redirects to the correct page and the broken link results in an error page.")
     public void TC011(){
         actual = "";
         expected = "200500";

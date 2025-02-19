@@ -1,12 +1,13 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import static utilities.JavaScriptUtility.scrollToElementJS;
+
+import com.demoqa.base.BaseTest;
 import static com.demoqa.pages.BasePage.delay;
+
+import io.qameta.allure.Step;
 
 public class ButtonTest extends BaseTest {
 
@@ -18,7 +19,7 @@ public class ButtonTest extends BaseTest {
     private String actual = "";
     private String expected = "truetruetrue";
     @Step("TC008")
-    @Test
+    @Test(description = "TC008: Verify that Right Click, Double Click and Single Click works correctly.")
     public void TC008(){
         homePage.goToElements();
         elementsPage.clickButtonsCard();

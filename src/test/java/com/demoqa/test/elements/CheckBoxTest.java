@@ -1,13 +1,13 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.Objects;
+import com.demoqa.base.BaseTest;
+
+import io.qameta.allure.Step;
 
 
 public class CheckBoxTest extends BaseTest {
@@ -18,7 +18,7 @@ public class CheckBoxTest extends BaseTest {
     private String actual = "";
     private String expected = "You have selected :desktopnotescommandsdownloadswordFileexcelFile";
     @Step("TC002")
-    @Test
+    @Test(description = "TC002: Verify selecting and deselecting checkboxes after pressing the expand/collapse button.")
     public void TC002(){
         homePage.goToElements();
         elementsPage.clickCheckBoxCard();
@@ -36,7 +36,7 @@ public class CheckBoxTest extends BaseTest {
       */
 
     @Step("TC003")
-    @Test
+    @Test(description = "TC003: Verify checkbox state changes correctly after pressing checking/unchecking.")
     public void TC003(){
         actual = "";
         expected = "truetruetruetrue";

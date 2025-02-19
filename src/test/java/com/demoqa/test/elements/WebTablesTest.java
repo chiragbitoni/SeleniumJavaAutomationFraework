@@ -1,6 +1,5 @@
 package com.demoqa.test.elements;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -9,7 +8,7 @@ import org.testng.annotations.Test;
 
 import com.demoqa.base.BaseTest;
 
-import static com.demoqa.pages.BasePage.delay;
+import io.qameta.allure.Step;
 
 public class WebTablesTest extends BaseTest {
     //region TC005
@@ -21,7 +20,7 @@ public class WebTablesTest extends BaseTest {
     private String rowData = "";
     private String expected = "ChiragBitoni23chiragbitoni4994@gmail.com70000000ITChiragBitoni23chiragbitoni4994@gmail.com70000000Developer Tools";
     @Step("TC005")
-    @Test
+    @Test(description = "TC005: Verify that a user can add, edit, and delete records in the table.")
     public void TC005(){
         homePage.goToElements();
         elementsPage.clickWebTablesCard();
@@ -58,7 +57,7 @@ public class WebTablesTest extends BaseTest {
        Test Summary: Verify that the search and reset functionalities work correctly.
      */
     @Step("TC006")
-    @Test
+    @Test(description = "TC006: Verify that the search and reset functionalities work correctly.")
     public void TC006(){
         actual = "";
         expected = "CierraVega39cierra@example.com10000InsuranceCierraVega39cierra@example.com10000InsuranceAldenCantrell45alden@example.com12000ComplianceKierraGentry29kierra@example.com2000Legal";
@@ -80,7 +79,7 @@ public class WebTablesTest extends BaseTest {
        Test Summary: Verify that the search and reset functionalities work correctly.
      */
     @Step("TC007")
-    @Test
+    @Test(description = "TC006: Verify that the search and reset functionalities work correctly.")
     public void TC007(){
         actual = "";
         expected = "293945453929";

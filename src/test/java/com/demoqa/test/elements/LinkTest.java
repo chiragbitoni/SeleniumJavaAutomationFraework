@@ -1,14 +1,15 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-
+import com.demoqa.base.BaseTest;
 import static com.demoqa.pages.BasePage.delay;
+
+import io.qameta.allure.Step;
 
 public class LinkTest extends BaseTest {
     //region TC009
@@ -20,7 +21,7 @@ public class LinkTest extends BaseTest {
     private String expected = "https://demoqa.com/https://demoqa.com/truetruetruetruetruetruetrue";
 
     @Step("TC009")
-    @Test
+    @Test(description = "TC009: Verify that navigation links open correctly and API links send the correct response.")
     public void TC009() {
         homePage.goToElements();
         elementsPage.clickLinksCard();

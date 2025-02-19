@@ -1,10 +1,11 @@
 package com.demoqa.test.elements;
 
-import com.demoqa.base.BaseTest;
-import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.demoqa.base.BaseTest;
+
+import io.qameta.allure.Step;
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class TextBoxTest extends BaseTest {
@@ -14,7 +15,7 @@ public class TextBoxTest extends BaseTest {
     */
     private String expected = "Name:Chirag Bitoni\nEmail:chiragbitoni4994@gmail.com\nCurrent Address :Plot-11, Greater Noida West 201307\nPermananet Address :A-52 Krishi Vihar, New Delhi 110048";
     @Step("TC001")
-    @Test
+    @Test(description = "TC012: Verify functionality of the text box.")
     public void TC001(){
         homePage.goToElements();
         elementsPage.clickTextBoxCard();
