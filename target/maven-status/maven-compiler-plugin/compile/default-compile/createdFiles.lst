@@ -1,0 +1,10 @@
+com\demoqa\pages\elements\UploadAndDownloadPage.class
+com\demoqa\pages\HomePage.class
+com\demoqa\pages\forms\FormsPage.class
+com\demoqa\pages\elements\ElementsPage.class
+utilities\JavaScriptUtility.class
+com\demoqa\pages\BasePage.class
+utilities\Utilities.class
+com\demoqa\pages\elements\DynamicPropertiesPage.class
+com\demoqa\pages\elements\BrokenLinkImagePage.class
+com\demoqa\pages\elements\LinksPage.class

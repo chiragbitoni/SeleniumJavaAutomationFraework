@@ -75,11 +75,11 @@ public class WebTablesTest extends BaseTest {
 
     //region TC007
     /*
-       Test Case ID: TC006
-       Test Summary: Verify that the search and reset functionalities work correctly.
+       Test Case ID: TC007
+       Test Summary: Verify that sorting works correctly.
      */
     @Step("TC007")
-    @Test(description = "TC006: Verify that the search and reset functionalities work correctly.")
+    @Test(description = "TC007: Verify that sorting works correctly.")
     public void TC007(){
         actual = "";
         expected = "293945453929";
