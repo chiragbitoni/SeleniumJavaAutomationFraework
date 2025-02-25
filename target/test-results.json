@@ -1,0 +1,304 @@
+[
+  {
+    "Run ID": "d0be3ee7-b50b-4169-bb29-6506b96799d4",
+    "Execution Date": "2025-02-23 16:23:14",
+    "Total Time": "00:13:46.451",
+    "Total Test Cases": 13.0,
+    "Test Cases": [
+      {
+        "Status": "PASSED",
+        "Description": "TC010: Verify that both broken and non-broken images are correctly identified on the page.",
+        "Time Span": "00:00:00.325",
+        "Test Name": "BrokenLinkImage",
+        "Test Case ID": "TC010",
+        "Time (ms)": "325",
+        "Class": "com.demoqa.test.elements.BrokenLinkImageTest",
+        "Start Time": "2025-02-23 16:24:32",
+        "End Time": "2025-02-23 16:24:33"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC011: Verify that the valid link redirects to the correct page and the broken link results in an error page.",
+        "Time Span": "00:00:16.935",
+        "Test Name": "BrokenLinkImage",
+        "Test Case ID": "TC011",
+        "Time (ms)": "16935",
+        "Class": "com.demoqa.test.elements.BrokenLinkImageTest",
+        "Start Time": "2025-02-23 16:24:33",
+        "End Time": "2025-02-23 16:24:50"
+      },
+      {
+        "Status": "SKIPPED",
+        "Description": "TC008: Verify that Right Click, Double Click and Single Click works correctly.",
+        "Time Span": "00:00:00.000",
+        "Test Name": "Button",
+        "Test Case ID": "TC008",
+        "Time (ms)": "0",
+        "Class": "com.demoqa.test.elements.ButtonTest",
+        "Start Time": "2025-02-23 16:27:55",
+        "End Time": "2025-02-23 16:27:55"
+      },
+      {
+        "Status": "SKIPPED",
+        "Description": "TC002: Verify selecting and deselecting checkboxes after pressing the expand/collapse button.",
+        "Time Span": "00:00:00.000",
+        "Test Name": "CheckBox",
+        "Test Case ID": "TC002",
+        "Time (ms)": "0",
+        "Class": "com.demoqa.test.elements.CheckBoxTest",
+        "Start Time": "2025-02-23 16:30:56",
+        "End Time": "2025-02-23 16:30:56"
+      },
+      {
+        "Status": "SKIPPED",
+        "Description": "TC003: Verify checkbox state changes correctly after pressing checking/unchecking.",
+        "Time Span": "00:00:00.000",
+        "Test Name": "CheckBox",
+        "Test Case ID": "TC003",
+        "Time (ms)": "0",
+        "Class": "com.demoqa.test.elements.CheckBoxTest",
+        "Start Time": "2025-02-23 16:30:56",
+        "End Time": "2025-02-23 16:30:56"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC009: Verify that navigation links open correctly and API links send the correct response.",
+        "Time Span": "00:00:20.185",
+        "Test Name": "Link",
+        "Test Case ID": "TC009",
+        "Time (ms)": "20185",
+        "Class": "com.demoqa.test.elements.LinkTest",
+        "Start Time": "2025-02-23 16:33:28",
+        "End Time": "2025-02-23 16:33:48"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC004: Verify Radio Button selected state after selecting any of the radio button.",
+        "Time Span": "00:00:00.377",
+        "Test Name": "RadioButton",
+        "Test Case ID": "TC004",
+        "Time (ms)": "377",
+        "Class": "com.demoqa.test.elements.RadioButtonTest",
+        "Start Time": "2025-02-23 16:34:33",
+        "End Time": "2025-02-23 16:34:33"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC001: Verify functionality of the text box.",
+        "Time Span": "00:00:25.961",
+        "Test Name": "TextBox",
+        "Test Case ID": "TC001",
+        "Time (ms)": "25961",
+        "Class": "com.demoqa.test.elements.TextBoxTest",
+        "Start Time": "2025-02-23 16:34:38",
+        "End Time": "2025-02-23 16:35:04"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC012: Validate that a user can successfully download a file from the DemoQA download page.",
+        "Time Span": "00:00:03.321",
+        "Test Name": "UploadAndDownload",
+        "Test Case ID": "TC012",
+        "Time (ms)": "3321",
+        "Class": "com.demoqa.test.elements.UploadAndDownloadTest",
+        "Start Time": "2025-02-23 16:35:49",
+        "End Time": "2025-02-23 16:35:53"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC013: Validate that a user can successfully upload a file on the DemoQA upload page.",
+        "Time Span": "00:00:00.417",
+        "Test Name": "UploadAndDownload",
+        "Test Case ID": "TC013",
+        "Time (ms)": "417",
+        "Class": "com.demoqa.test.elements.UploadAndDownloadTest",
+        "Start Time": "2025-02-23 16:35:53",
+        "End Time": "2025-02-23 16:35:54"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC005: Verify that a user can add, edit, and delete records in the table.",
+        "Time Span": "00:00:01.797",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC005",
+        "Time (ms)": "1797",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 16:36:50",
+        "End Time": "2025-02-23 16:36:52"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC006: Verify that the search and reset functionalities work correctly.",
+        "Time Span": "00:00:02.574",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC006",
+        "Time (ms)": "2574",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 16:36:52",
+        "End Time": "2025-02-23 16:36:55"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC007: Verify that sorting works correctly.",
+        "Time Span": "00:00:02.334",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC007",
+        "Time (ms)": "2334",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 16:36:55",
+        "End Time": "2025-02-23 16:36:57"
+      }
+    ]
+  },
+  {
+    "Run ID": "ba7bc6d4-d166-49d7-aeb9-d42ef036c1c0",
+    "Execution Date": "2025-02-23 23:43:40",
+    "Total Time": "00:04:21.382",
+    "Total Test Cases": 13,
+    "Test Cases": [
+      {
+        "Status": "PASSED",
+        "Description": "TC010: Verify that both broken and non-broken images are correctly identified on the page.",
+        "Time Span": "00:00:00.334",
+        "Test Name": "BrokenLinkImage",
+        "Test Case ID": "TC010",
+        "Time (ms)": "334",
+        "Class": "com.demoqa.test.elements.BrokenLinkImageTest",
+        "Start Time": "2025-02-23 23:44:08",
+        "End Time": "2025-02-23 23:44:08"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC011: Verify that the valid link redirects to the correct page and the broken link results in an error page.",
+        "Time Span": "00:00:16.084",
+        "Test Name": "BrokenLinkImage",
+        "Test Case ID": "TC011",
+        "Time (ms)": "16084",
+        "Class": "com.demoqa.test.elements.BrokenLinkImageTest",
+        "Start Time": "2025-02-23 23:44:11",
+        "End Time": "2025-02-23 23:44:27"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC008: Verify that Right Click, Double Click and Single Click works correctly.",
+        "Time Span": "00:00:28.419",
+        "Test Name": "Button",
+        "Test Case ID": "TC008",
+        "Time (ms)": "28419",
+        "Class": "com.demoqa.test.elements.ButtonTest",
+        "Start Time": "2025-02-23 23:44:32",
+        "End Time": "2025-02-23 23:45:01"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC002: Verify selecting and deselecting checkboxes after pressing the expand/collapse button.",
+        "Time Span": "00:00:00.553",
+        "Test Name": "CheckBox",
+        "Test Case ID": "TC002",
+        "Time (ms)": "553",
+        "Class": "com.demoqa.test.elements.CheckBoxTest",
+        "Start Time": "2025-02-23 23:45:32",
+        "End Time": "2025-02-23 23:45:33"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC003: Verify checkbox state changes correctly after pressing checking/unchecking.",
+        "Time Span": "00:00:00.564",
+        "Test Name": "CheckBox",
+        "Test Case ID": "TC003",
+        "Time (ms)": "564",
+        "Class": "com.demoqa.test.elements.CheckBoxTest",
+        "Start Time": "2025-02-23 23:45:35",
+        "End Time": "2025-02-23 23:45:35"
+      },
+      {
+        "Status": "FAILED",
+        "Description": "TC009: Verify that navigation links open correctly and API links send the correct response.",
+        "Time Span": "00:00:19.507",
+        "Test Name": "Link",
+        "Test Case ID": "TC009",
+        "Time (ms)": "19507",
+        "Class": "com.demoqa.test.elements.LinkTest",
+        "Start Time": "2025-02-23 23:46:07",
+        "End Time": "2025-02-23 23:46:26"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC004: Verify Radio Button selected state after selecting any of the radio button.",
+        "Time Span": "00:00:00.329",
+        "Test Name": "RadioButton",
+        "Test Case ID": "TC004",
+        "Time (ms)": "329",
+        "Class": "com.demoqa.test.elements.RadioButtonTest",
+        "Start Time": "2025-02-23 23:46:45",
+        "End Time": "2025-02-23 23:46:45"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC001: Verify functionality of the text box.",
+        "Time Span": "00:00:00.810",
+        "Test Name": "TextBox",
+        "Test Case ID": "TC001",
+        "Time (ms)": "810",
+        "Class": "com.demoqa.test.elements.TextBoxTest",
+        "Start Time": "2025-02-23 23:47:05",
+        "End Time": "2025-02-23 23:47:05"
+      },
+      {
+        "Status": "FAILED",
+        "Description": "TC012: Validate that a user can successfully download a file from the DemoQA download page.",
+        "Time Span": "00:00:03.313",
+        "Test Name": "UploadAndDownload",
+        "Test Case ID": "TC012",
+        "Time (ms)": "3313",
+        "Class": "com.demoqa.test.elements.UploadAndDownloadTest",
+        "Start Time": "2025-02-23 23:47:23",
+        "End Time": "2025-02-23 23:47:26"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC013: Validate that a user can successfully upload a file on the DemoQA upload page.",
+        "Time Span": "00:00:03.345",
+        "Test Name": "UploadAndDownload",
+        "Test Case ID": "TC013",
+        "Time (ms)": "3345",
+        "Class": "com.demoqa.test.elements.UploadAndDownloadTest",
+        "Start Time": "2025-02-23 23:47:27",
+        "End Time": "2025-02-23 23:47:31"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC005: Verify that a user can add, edit, and delete records in the table.",
+        "Time Span": "00:00:01.988",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC005",
+        "Time (ms)": "1988",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 23:47:47",
+        "End Time": "2025-02-23 23:47:49"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC006: Verify that the search and reset functionalities work correctly.",
+        "Time Span": "00:00:02.455",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC006",
+        "Time (ms)": "2455",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 23:47:52",
+        "End Time": "2025-02-23 23:47:54"
+      },
+      {
+        "Status": "PASSED",
+        "Description": "TC007: Verify that sorting works correctly.",
+        "Time Span": "00:00:03.187",
+        "Test Name": "WebTables",
+        "Test Case ID": "TC007",
+        "Time (ms)": "3187",
+        "Class": "com.demoqa.test.elements.WebTablesTest",
+        "Start Time": "2025-02-23 23:47:54",
+        "End Time": "2025-02-23 23:47:58"
+      }
+    ]
+  }
+]

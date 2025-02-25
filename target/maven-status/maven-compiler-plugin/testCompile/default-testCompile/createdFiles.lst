@@ -1,10 +1,12 @@
+com\demoqa\base\TestResultListener.class
+com\demoqa\test\elements\WebTablesTest.class
+com\demoqa\test\elements\LinkTest.class
+com\demoqa\base\TestResultListener$1.class
+com\demoqa\test\elements\DynamicPropertiesTest.class
+com\demoqa\test\elements\BrokenLinkImageTest.class
 com\demoqa\test\elements\RadioButtonTest.class
 com\demoqa\test\elements\TextBoxTest.class
 com\demoqa\test\elements\UploadAndDownloadTest.class
 com\demoqa\test\elements\ButtonTest.class
 com\demoqa\base\BaseTest.class
-com\demoqa\test\elements\WebTablesTest.class
 com\demoqa\test\elements\CheckBoxTest.class
-com\demoqa\test\elements\LinkTest.class
-com\demoqa\test\elements\DynamicPropertiesTest.class
-com\demoqa\test\elements\BrokenLinkImageTest.class

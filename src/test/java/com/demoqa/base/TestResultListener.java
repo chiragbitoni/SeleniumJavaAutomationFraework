@@ -67,8 +67,32 @@ public class TestResultListener implements ITestListener {
         testResult.put("Class", className);
         testResult.put("Description", description);
 
+        // Capture console output and exceptions
+        String consoleOutput = captureConsoleOutput();
+        if (result.getThrowable() != null) {
+            consoleOutput += "\nException: " + result.getThrowable().toString();
+        }
+
+        testResult.put("Message", consoleOutput);
+
         testCases.add(testResult);
     }
+
+    private String captureConsoleOutput() {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        PrintStream ps = new PrintStream(baos);
+        PrintStream oldOut = System.out;
+
+        try {
+            System.setOut(ps);
+            System.out.flush();
+        } finally {
+            System.setOut(oldOut);
+        }
+
+        return baos.toString();
+    }
+
 
     private void saveResultsToJson() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
